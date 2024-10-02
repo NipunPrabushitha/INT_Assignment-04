@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment-Case02</title>
+    <style>
+        section{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: blue;
+            position: relative;
+        }
+        .circle{
+            width: 250px;
+            height: 250px;
+            position: absolute;
+            top:0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            background: #676666;
+            border-radius: 100%;
+        }
+        .circle>p{
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+            font-size: 30px;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        .circle::before{
+            content: "";
+            border: 10px solid white;
+            border-radius: 100%;
+            border-top-color: red;
+
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        .circle:hover::before{
+            transform:rotate(360deg);
+            transition-duration:1.5s;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div class="circle">
+        <p>RWAD</p>
+    </div>
+</section>
+</body>
+</html>

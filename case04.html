@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment-Case04</title>
+    <style>
+        div {
+            background-image: url("/assest/images/slide5.jpeg");
+            width: 1px;
+            height: 1px;
+            border: 2px solid black;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            animation: 10s infinite;
+            animation-name: my-animation;
+            animation-timing-function: linear;
+        }
+
+        @keyframes my-animation {
+            0% {
+                width: 1px;
+                height: 1px;
+            }
+
+            25% {
+                width: 250px;
+                height: 250px;
+                opacity: 0;
+            }
+
+            50% {
+                width: 750px;
+                height: 750px;
+                opacity: 0;
+            }
+
+            100% {
+                width: 1000px;
+                height: 1000px;
+                opacity: 0;
+            }
+        }
+
+        div:hover {
+            width: 1px;
+            height: 1px;
+            border: 2px solid rgb(237,14,14);
+            border-radius: 100%;
+            animation: myAnimation 4s infinite;
+        }
+
+        @keyframes my-animation {
+            0% {
+                width: 1px;
+                height: 1px;
+            }
+
+            25% {
+                width: 250px;
+                height: 250px;
+                opacity: 0;
+            }
+
+            50% {
+                width: 750px;
+                height: 750px;
+                opacity: 0;
+            }
+
+            100% {
+                width: 1000px;
+                height: 1000px;
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

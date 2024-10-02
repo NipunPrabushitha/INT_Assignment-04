@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment-Case03</title>
+    <style>
+        body{
+            overflow: hidden;
+        }
+        :root{
+            --width:150px;
+            --height:100px;
+        }
+        /*section{
+            width: 100%;
+            height: 100vh;
+        }*/
+        section>div{
+            background-color: #facc41;
+            width: var(--width);
+            height: var(--height);
+            animation: my-animation 3s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            border-radius: 10px;
+        }
+        @keyframes my-animation {
+            0%{
+                margin-left: 0;
+                margin-top: 0;
+                background-color: blue;
+                transform: rotate(360deg);
+
+            }
+            25%{
+                margin-left:calc(100% - var(--width));
+                margin-top: 0;
+                transform: rotate(0deg);
+                background-color: red;
+            }
+            50%{
+                margin-left:calc(100% - var(--width));
+                margin-top: calc(100vh - var(--height));
+                transform: rotate(360deg);
+                background-color: green;
+            }
+            75%{
+                margin-left: 0;
+                margin-top: calc(100vh - var(--height));
+                transform: rotate(0deg);
+                background-color: yellow;
+            }
+            100%{
+                margin-left: 0;
+                margin-top: 0;
+                transform: rotate(360deg);
+                background-color: blue;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div>
+
+    </div>
+</section>
+</body>
+</html>
