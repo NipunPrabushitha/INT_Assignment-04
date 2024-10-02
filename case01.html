@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment-Case01</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            position: relative;
+            right: 150px;
+        }
+
+        section > div {
+            width: 200px;
+            height: 50px;
+            color: white;
+            background: purple;
+            position: relative;
+            border-radius: 0 8px 8px 0;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+            rgba(0, 0, 0, 0.12) 0px -12px 30px,
+            rgba(0, 0, 0, 0.12) 0px 4px 6px,
+            rgba(0, 0, 0, 0.17) 0px 12px 13px,
+            rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            transition: transform 1s;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+
+        section > div:hover {
+            transform: translateX(150px);
+        }
+
+        section > div > div {
+            margin-left: auto;
+        }
+
+        section > div > h2 {
+            margin: 0;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <h2>Menu One</h2>
+        <div><i class="fa-solid fa-address-book"></i></div>
+    </div>
+    <div>
+        <h2>Menu Two</h2>
+        <div><i class="fa-solid fa-address-book"></i></div>
+    </div>
+    <div>
+        <h2>Menu Three</h2>
+        <div><i class="fa-solid fa-address-book"></i></div>
+    </div>
+    <div>
+        <h2>Menu Four</h2>
+        <div><i class="fa-solid fa-address-book"></i></div>
+    </div>
+    <div>
+        <h2>Menu Five</h2>
+        <div><i class="fa-solid fa-address-book"></i></div>
+    </div>
+</section>
+</body>
+</html>
